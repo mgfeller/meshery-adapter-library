@@ -9,3 +9,7 @@ protoc-setup:
 
 proto:
 	protoc -I meshes/ meshes/meshops.proto --go_out=plugins=grpc:./meshes/
+
+
+test:
+	go test ./...
